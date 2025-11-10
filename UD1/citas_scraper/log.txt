@@ -1,0 +1,303 @@
+2025-11-10 11:53:27 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: citas_scraper)
+2025-11-10 11:53:27 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.14.6',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.11.6 | packaged by conda-forge | (main, Oct  3 2023, 10:40:35) '
+           '[GCC 12.3.0]',
+ 'pyOpenSSL': '23.2.0 (OpenSSL 3.1.3 19 Sep 2023)',
+ 'cryptography': '41.0.4',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35'}
+2025-11-10 11:53:27 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-11-10 11:53:27 [asyncio] DEBUG: Using selector: EpollSelector
+2025-11-10 11:53:27 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-11-10 11:53:27 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2025-11-10 11:53:27 [scrapy.extensions.telnet] INFO: Telnet Password: b8da4736112db597
+2025-11-10 11:53:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2025-11-10 11:53:27 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'citas_scraper',
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'citas_scraper.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['citas_scraper.spiders']}
+2025-11-10 11:53:27 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-11-10 11:53:27 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-11-10 11:53:27 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-11-10 11:53:27 [scrapy.core.engine] INFO: Spider opened
+2025-11-10 11:53:27 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-11-10 11:53:27 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-11-10 11:53:27 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://quotes.toscrape.com/robots.txt> (referer: None)
+2025-11-10 11:53:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com> (referer: None)
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': '“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”', 'autor': 'Albert Einstein', 'tags': ['change', 'deep-thoughts', 'thinking', 'world']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': '“It is our choices, Harry, that show what we truly are, far more than our abilities.”', 'autor': 'J.K. Rowling', 'tags': ['abilities', 'choices']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': '“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”', 'autor': 'Albert Einstein', 'tags': ['inspirational', 'life', 'live', 'miracle', 'miracles']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': '“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”', 'autor': 'Jane Austen', 'tags': ['aliteracy', 'books', 'classic', 'humor']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': "“Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”", 'autor': 'Marilyn Monroe', 'tags': ['be-yourself', 'inspirational']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': '“Try not to become a man of success. Rather become a man of value.”', 'autor': 'Albert Einstein', 'tags': ['adulthood', 'success', 'value']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': '“It is better to be hated for what you are than to be loved for what you are not.”', 'autor': 'André Gide', 'tags': ['life', 'love']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': "“I have not failed. I've just found 10,000 ways that won't work.”", 'autor': 'Thomas A. Edison', 'tags': ['edison', 'failure', 'inspirational', 'paraphrased']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': "“A woman is like a tea bag; you never know how strong it is until it's in hot water.”", 'autor': 'Eleanor Roosevelt', 'tags': ['misattributed-eleanor-roosevelt']}
+2025-11-10 11:53:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com>
+{'texto': '“A day without sunshine is like, you know, night.”', 'autor': 'Steve Martin', 'tags': ['humor', 'obvious', 'simile']}
+2025-11-10 11:53:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/2/> (referer: https://quotes.toscrape.com)
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': "“This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.”", 'autor': 'Marilyn Monroe', 'tags': ['friends', 'heartbreak', 'inspirational', 'life', 'love', 'sisters']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': '“It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.”', 'autor': 'J.K. Rowling', 'tags': ['courage', 'friends']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': "“If you can't explain it to a six year old, you don't understand it yourself.”", 'autor': 'Albert Einstein', 'tags': ['simplicity', 'understand']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': "“You may not be her first, her last, or her only. She loved before she may love again. But if she loves you now, what else matters? She's not perfect—you aren't either, and the two of you may never be perfect together but if she can make you laugh, cause you to think twice, and admit to being human and making mistakes, hold onto her and give her the most you can. She may not be thinking about you every second of the day, but she will give you a part of her that she knows you can break—her heart. So don't hurt her, don't change her, don't analyze and don't expect more than she can give. Smile when she makes you happy, let her know when she makes you mad, and miss her when she's not there.”", 'autor': 'Bob Marley', 'tags': ['love']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': '“I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.”', 'autor': 'Dr. Seuss', 'tags': ['fantasy']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': '“I may not have gone where I intended to go, but I think I have ended up where I needed to be.”', 'autor': 'Douglas Adams', 'tags': ['life', 'navigation']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': "“The opposite of love is not hate, it's indifference. The opposite of art is not ugliness, it's indifference. The opposite of faith is not heresy, it's indifference. And the opposite of life is not death, it's indifference.”", 'autor': 'Elie Wiesel', 'tags': ['activism', 'apathy', 'hate', 'indifference', 'inspirational', 'love', 'opposite', 'philosophy']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': '“It is not a lack of love, but a lack of friendship that makes unhappy marriages.”', 'autor': 'Friedrich Nietzsche', 'tags': ['friendship', 'lack-of-friendship', 'lack-of-love', 'love', 'marriage', 'unhappy-marriage']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': '“Good friends, good books, and a sleepy conscience: this is the ideal life.”', 'autor': 'Mark Twain', 'tags': ['books', 'contentment', 'friends', 'friendship', 'life']}
+2025-11-10 11:53:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/2/>
+{'texto': '“Life is what happens to us while we are making other plans.”', 'autor': 'Allen Saunders', 'tags': ['fate', 'life', 'misattributed-john-lennon', 'planning', 'plans']}
+2025-11-10 11:53:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/3/> (referer: https://quotes.toscrape.com/page/2/)
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“I love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this, in which there is no I or you, so intimate that your hand upon my chest is my hand, so intimate that when I fall asleep your eyes close.”', 'autor': 'Pablo Neruda', 'tags': ['love', 'poetry']}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“For every minute you are angry you lose sixty seconds of happiness.”', 'autor': 'Ralph Waldo Emerson', 'tags': ['happiness']}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“If you judge people, you have no time to love them.”', 'autor': 'Mother Teresa', 'tags': ['attributed-no-source']}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“Anyone who thinks sitting in church can make you a Christian must also think that sitting in a garage can make you a car.”', 'autor': 'Garrison Keillor', 'tags': ['humor', 'religion']}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.”', 'autor': 'Jim Henson', 'tags': ['humor']}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“Today you are You, that is truer than true. There is no one alive who is Youer than You.”', 'autor': 'Dr. Seuss', 'tags': ['comedy', 'life', 'yourself']}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.”', 'autor': 'Albert Einstein', 'tags': ['children', 'fairy-tales']}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.”', 'autor': 'J.K. Rowling', 'tags': []}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“Logic will get you from A to Z; imagination will get you everywhere.”', 'autor': 'Albert Einstein', 'tags': ['imagination']}
+2025-11-10 11:53:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/3/>
+{'texto': '“One good thing about music, when it hits you, you feel no pain.”', 'autor': 'Bob Marley', 'tags': ['music']}
+2025-11-10 11:53:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/4/> (referer: https://quotes.toscrape.com/page/3/)
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': "“The more that you read, the more things you will know. The more that you learn, the more places you'll go.”", 'autor': 'Dr. Seuss', 'tags': ['learning', 'reading', 'seuss']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': '“Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?”', 'autor': 'J.K. Rowling', 'tags': ['dumbledore']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': '“The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.”', 'autor': 'Bob Marley', 'tags': ['friendship']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': '“Not all of us can do great things. But we can do small things with great love.”', 'autor': 'Mother Teresa', 'tags': ['misattributed-to-mother-teresa', 'paraphrased']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': '“To the well-organized mind, death is but the next great adventure.”', 'autor': 'J.K. Rowling', 'tags': ['death', 'inspirational']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': "“All you need is love. But a little chocolate now and then doesn't hurt.”", 'autor': 'Charles M. Schulz', 'tags': ['chocolate', 'food', 'humor']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': "“We read to know we're not alone.”", 'autor': 'William Nicholson', 'tags': ['misattributed-to-c-s-lewis', 'reading']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': '“Any fool can know. The point is to understand.”', 'autor': 'Albert Einstein', 'tags': ['knowledge', 'learning', 'understanding', 'wisdom']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': '“I have always imagined that Paradise will be a kind of library.”', 'autor': 'Jorge Luis Borges', 'tags': ['books', 'library']}
+2025-11-10 11:53:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/4/>
+{'texto': '“It is never too late to be what you might have been.”', 'autor': 'George Eliot', 'tags': ['inspirational']}
+2025-11-10 11:53:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/5/> (referer: https://quotes.toscrape.com/page/4/)
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.”', 'autor': 'George R.R. Martin', 'tags': ['read', 'readers', 'reading', 'reading-books']}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“You can never get a cup of tea large enough or a book long enough to suit me.”', 'autor': 'C.S. Lewis', 'tags': ['books', 'inspirational', 'reading', 'tea']}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“You believe lies so you eventually learn to trust no one but yourself.”', 'autor': 'Marilyn Monroe', 'tags': []}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“If you can make a woman laugh, you can make her do anything.”', 'autor': 'Marilyn Monroe', 'tags': ['girls', 'love']}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“Life is like riding a bicycle. To keep your balance, you must keep moving.”', 'autor': 'Albert Einstein', 'tags': ['life', 'simile']}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.”', 'autor': 'Marilyn Monroe', 'tags': ['love']}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': "“A wise girl kisses but doesn't love, listens but doesn't believe, and leaves before she is left.”", 'autor': 'Marilyn Monroe', 'tags': ['attributed-no-source']}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“Only in the darkness can you see the stars.”', 'autor': 'Martin Luther King Jr.', 'tags': ['hope', 'inspirational']}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“It matters not what someone is born, but what they grow to be.”', 'autor': 'J.K. Rowling', 'tags': ['dumbledore']}
+2025-11-10 11:53:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/5/>
+{'texto': '“Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.”', 'autor': 'James Baldwin', 'tags': ['love']}
+2025-11-10 11:53:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/6/> (referer: https://quotes.toscrape.com/page/5/)
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': '“There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves, it is not my nature.”', 'autor': 'Jane Austen', 'tags': ['friendship', 'love']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': '“Do one thing every day that scares you.”', 'autor': 'Eleanor Roosevelt', 'tags': ['attributed', 'fear', 'inspiration']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': '“I am good, but not an angel. I do sin, but I am not the devil. I am just a small girl in a big world trying to find someone to love.”', 'autor': 'Marilyn Monroe', 'tags': ['attributed-no-source']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': '“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.”', 'autor': 'Albert Einstein', 'tags': ['music']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': '“If you only read the books that everyone else is reading, you can only think what everyone else is thinking.”', 'autor': 'Haruki Murakami', 'tags': ['books', 'thought']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': '“The difference between genius and stupidity is: genius has its limits.”', 'autor': 'Alexandre Dumas fils', 'tags': ['misattributed-to-einstein']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': "“He's like a drug for you, Bella.”", 'autor': 'Stephenie Meyer', 'tags': ['drug', 'romance', 'simile']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': '“There is no friend as loyal as a book.”', 'autor': 'Ernest Hemingway', 'tags': ['books', 'friends', 'novelist-quotes']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': '“When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.”', 'autor': 'Helen Keller', 'tags': ['inspirational']}
+2025-11-10 11:53:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/6/>
+{'texto': "“Life isn't about finding yourself. Life is about creating yourself.”", 'autor': 'George Bernard Shaw', 'tags': ['inspirational', 'life', 'yourself']}
+2025-11-10 11:53:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/7/> (referer: https://quotes.toscrape.com/page/6/)
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': "“That's the problem with drinking, I thought, as I poured myself a drink. If something bad happens you drink in an attempt to forget; if something good happens you drink in order to celebrate; and if nothing happens you drink to make something happen.”", 'autor': 'Charles Bukowski', 'tags': ['alcohol']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': '“You don’t forget the face of the person who was your last hope.”', 'autor': 'Suzanne Collins', 'tags': ['the-hunger-games']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': "“Remember, we're madly in love, so it's all right to kiss me anytime you feel like it.”", 'autor': 'Suzanne Collins', 'tags': ['humor']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': '“To love at all is to be vulnerable. Love anything and your heart will be wrung and possibly broken. If you want to make sure of keeping it intact you must give it to no one, not even an animal. Wrap it carefully round with hobbies and little luxuries; avoid all entanglements. Lock it up safe in the casket or coffin of your selfishness. But in that casket, safe, dark, motionless, airless, it will change. It will not be broken; it will become unbreakable, impenetrable, irredeemable. To love is to be vulnerable.”', 'autor': 'C.S. Lewis', 'tags': ['love']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': '“Not all those who wander are lost.”', 'autor': 'J.R.R. Tolkien', 'tags': ['bilbo', 'journey', 'lost', 'quest', 'travel', 'wander']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': '“Do not pity the dead, Harry. Pity the living, and, above all those who live without love.”', 'autor': 'J.K. Rowling', 'tags': ['live-death-love']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': '“There is nothing to writing. All you do is sit down at a typewriter and bleed.”', 'autor': 'Ernest Hemingway', 'tags': ['good', 'writing']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': '“Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense.”', 'autor': 'Ralph Waldo Emerson', 'tags': ['life', 'regrets']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': '“I have never let my schooling interfere with my education.”', 'autor': 'Mark Twain', 'tags': ['education']}
+2025-11-10 11:53:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/7/>
+{'texto': "“I have heard there are troubles of more than one kind. Some come from ahead and some come from behind. But I've bought a big bat. I'm all ready you see. Now my troubles are going to have troubles with me!”", 'autor': 'Dr. Seuss', 'tags': ['troubles']}
+2025-11-10 11:53:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/8/> (referer: https://quotes.toscrape.com/page/7/)
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': '“If I had a flower for every time I thought of you...I could walk through my garden forever.”', 'autor': 'Alfred Tennyson', 'tags': ['friendship', 'love']}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': '“Some people never go crazy. What truly horrible lives they must lead.”', 'autor': 'Charles Bukowski', 'tags': ['humor']}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': '“The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it.”', 'autor': 'Terry Pratchett', 'tags': ['humor', 'open-mind', 'thinking']}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': '“Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!”', 'autor': 'Dr. Seuss', 'tags': ['humor', 'philosophy']}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': "“What really knocks me out is a book that, when you're all done reading it, you wish the author that wrote it was a terrific friend of yours and you could call him up on the phone whenever you felt like it. That doesn't happen much, though.”", 'autor': 'J.D. Salinger', 'tags': ['authors', 'books', 'literature', 'reading', 'writing']}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': '“The reason I talk to myself is because I’m the only one whose answers I accept.”', 'autor': 'George Carlin', 'tags': ['humor', 'insanity', 'lies', 'lying', 'self-indulgence', 'truth']}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': "“You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one.”", 'autor': 'John Lennon', 'tags': ['beatles', 'connection', 'dreamers', 'dreaming', 'dreams', 'hope', 'inspirational', 'peace']}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': '“I am free of all prejudice. I hate everyone equally. ”', 'autor': 'W.C. Fields', 'tags': ['humor', 'sinister']}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': "“The question isn't who is going to let me; it's who is going to stop me.”", 'autor': 'Ayn Rand', 'tags': []}
+2025-11-10 11:53:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/8/>
+{'texto': "“′Classic′ - a book which people praise and don't read.”", 'autor': 'Mark Twain', 'tags': ['books', 'classic', 'reading']}
+2025-11-10 11:53:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/9/> (referer: https://quotes.toscrape.com/page/8/)
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“Anyone who has never made a mistake has never tried anything new.”', 'autor': 'Albert Einstein', 'tags': ['mistakes']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': "“A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.”", 'autor': 'Jane Austen', 'tags': ['humor', 'love', 'romantic', 'women']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“Remember, if the time should come when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory.”', 'autor': 'J.K. Rowling', 'tags': ['integrity']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“I declare after all there is no enjoyment like reading! How much sooner one tires of any thing than of a book! -- When I have a house of my own, I shall be miserable if I have not an excellent library.”', 'autor': 'Jane Austen', 'tags': ['books', 'library', 'reading']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“There are few people whom I really love, and still fewer of whom I think well. The more I see of the world, the more am I dissatisfied with it; and every day confirms my belief of the inconsistency of all human characters, and of the little dependence that can be placed on the appearance of merit or sense.”', 'autor': 'Jane Austen', 'tags': ['elizabeth-bennet', 'jane-austen']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“Some day you will be old enough to start reading fairy tales again.”', 'autor': 'C.S. Lewis', 'tags': ['age', 'fairytales', 'growing-up']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“We are not necessarily doubting that God will do the best for us; we are wondering how painful the best will turn out to be.”', 'autor': 'C.S. Lewis', 'tags': ['god']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”', 'autor': 'Mark Twain', 'tags': ['death', 'life']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“A lie can travel half way around the world while the truth is putting on its shoes.”', 'autor': 'Mark Twain', 'tags': ['misattributed-mark-twain', 'truth']}
+2025-11-10 11:53:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/9/>
+{'texto': '“I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.”', 'autor': 'C.S. Lewis', 'tags': ['christianity', 'faith', 'religion', 'sun']}
+2025-11-10 11:53:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://quotes.toscrape.com/page/10/> (referer: https://quotes.toscrape.com/page/9/)
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': '“The truth." Dumbledore sighed. "It is a beautiful and terrible thing, and should therefore be treated with great caution.”', 'autor': 'J.K. Rowling', 'tags': ['truth']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': "“I'm the one that's got to die when it's time for me to die, so let me live my life the way I want to.”", 'autor': 'Jimi Hendrix', 'tags': ['death', 'life']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': '“To die will be an awfully big adventure.”', 'autor': 'J.M. Barrie', 'tags': ['adventure', 'love']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': '“It takes courage to grow up and become who you really are.”', 'autor': 'E.E. Cummings', 'tags': ['courage']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': '“But better to get hurt by the truth than comforted with a lie.”', 'autor': 'Khaled Hosseini', 'tags': ['life']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': '“You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it.”', 'autor': 'Harper Lee', 'tags': ['better-life-empathy']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': '“You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.”', 'autor': "Madeleine L'Engle", 'tags': ['books', 'children', 'difficult', 'grown-ups', 'write', 'writers', 'writing']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': '“Never tell the truth to people who are not worthy of it.”', 'autor': 'Mark Twain', 'tags': ['truth']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': "“A person's a person, no matter how small.”", 'autor': 'Dr. Seuss', 'tags': ['inspirational']}
+2025-11-10 11:53:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://quotes.toscrape.com/page/10/>
+{'texto': '“... a mind needs books as a sword needs a whetstone, if it is to keep its edge.”', 'autor': 'George R.R. Martin', 'tags': ['books', 'mind']}
+2025-11-10 11:53:39 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-11-10 11:53:39 [scrapy.extensions.feedexport] INFO: Stored json feed (100 items) in: resultados.json
+2025-11-10 11:53:39 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3010,
+ 'downloader/request_count': 11,
+ 'downloader/request_method_count/GET': 11,
+ 'downloader/response_bytes': 22911,
+ 'downloader/response_count': 11,
+ 'downloader/response_status_count/200': 10,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 11.810025,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 11, 10, 11, 53, 39, 203462, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 108878,
+ 'httpcompression/response_count': 11,
+ 'item_scraped_count': 100,
+ 'items_per_minute': 545.4545454545455,
+ 'log_count/DEBUG': 114,
+ 'log_count/INFO': 11,
+ 'memusage/max': 62664704,
+ 'memusage/startup': 62664704,
+ 'request_depth_max': 9,
+ 'response_received_count': 11,
+ 'responses_per_minute': 60.00000000000001,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2025, 11, 10, 11, 53, 27, 393437, tzinfo=datetime.timezone.utc)}
+2025-11-10 11:53:39 [scrapy.core.engine] INFO: Spider closed (finished)
