@@ -1,0 +1,43 @@
+services:
+  mongo1:
+    image: mongo:5.0.9
+    container_name: mongodb1
+    hostname: mongodb1
+    restart: always
+    ports:
+      - "27021:27017"
+    volumes:
+      - ./data/mongo1:/data/db
+    command: mongod --replSet rs0 --shardsvr --bind_ip_all
+    networks:
+      - mongo-cluster-net
+
+  mongo2:
+    image: mongo:5.0.9
+    container_name: mongodb2
+    hostname: mongodb2
+    restart: always
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./data/mongo2:/data/db
+    command: mongod --replSet rs0 --bind_ip_all
+    networks:
+      - mongo-cluster-net
+
+  mongo3:
+    image: mongo:5.0.9
+    container_name: mongodb3
+    hostname: mongodb3
+    restart: always
+    ports:
+      - "27019:27017"
+    volumes:
+      - ./data/mongo3:/data/db
+    command: mongod --replSet rs0 --bind_ip_all
+    networks:
+      - mongo-cluster-net
+
+networks:
+  mongo-cluster-net:
+    external: true

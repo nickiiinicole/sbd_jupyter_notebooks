@@ -1,0 +1,5 @@
+mon//mover el fichero csv a data_mongodb del node primario
+//conectarse al node primario con sudo docker exect -it "nombre node primario" /bin/bash
+//ejecutar el siguiente comando creando previamente la bbdd "bbdd" con "use bbdd"  en el nodo primario
+mongoimport -u admin -p abc123 --authenticationDatabase admin --db bbdd --collection compras --type csv --file /data/db/RegistrosComprasOnline.csv --headerline
+

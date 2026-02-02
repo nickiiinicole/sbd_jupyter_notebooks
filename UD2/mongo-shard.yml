@@ -1,0 +1,41 @@
+
+services:
+
+  # =====================
+  # CONFIG SERVER
+  # =====================
+  configsvr:
+    image: mongo:5.0.9
+    container_name: configsvr
+    hostname: configsvr
+    command: >
+      mongod --configsvr
+             --replSet cfgRS
+             --port 27019
+             --bind_ip_all
+    volumes:
+      - ./data/configsvr:/data/db
+    networks:
+      - mongo-cluster-net
+
+  # =====================
+  # MONGOS (ROUTER)
+  # =====================
+  mongos:
+    image: mongo:5.0.9
+    container_name: mongos
+    hostname: mongos
+    depends_on:
+      - configsvr
+    command: >
+      mongos --configdb cfgRS/configsvr:27019
+             --bind_ip_all
+    ports:
+      - "27020:27017"
+    networks:
+      - mongo-cluster-net
+
+networks:
+  mongo-cluster-net:
+    external: true
+
